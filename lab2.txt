@@ -1,0 +1,54 @@
+mkdir git-demo-merge
+cd git-demo-merge
+git init
+echo "version1">file.txt
+git add .
+git commit -m "initial commit"
+git checkout -b feature
+echo "feature version">file1.txt
+git add .
+git commit -m "changed in feature"
+git checkout master
+echo "main version">file1.txt
+git add .
+git commit -m "change in main"
+git merge feature 
+cat file1.txt
+echo "allow main and feature branch">file1.txt
+git add .
+git commit -m "resolved merge conflict"
+git log
+            
+
+
+
+----------
+
+git --version
+ git config --global user.name "chinpatel17"
+ git config --global user.email "patel007ab17@gmail.com"
+ git --list
+ mkdir demolab
+ cd demolab
+git clone https://github.com/chinpatel17/abcd.git(repo url)
+ cd abcd
+nano project.txt
+ git add .
+ git commit -m "initial commit"
+git branch
+ git push -u origin main
+ git branch branch-a
+ git checkout branch-a
+ nano pro.txt
+git add .
+ git commit -m "updated branch"
+git log
+git push origin branch-a
+
+
+
+
+
+
+
+
