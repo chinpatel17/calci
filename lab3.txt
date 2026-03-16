@@ -1,5 +1,7 @@
 sudo apt update
 sudo apt install openjdk-21-jdk -y
+sudo rm jenkins.war
+ sudo rm -rf ~/.jenkins
 wget https://get.jenkins.io/war-stable/latest/jenkins.war
 ls
 java -jar jenkins.war --httpPort=8090
