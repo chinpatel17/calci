@@ -36,6 +36,13 @@ pipeline {
 }
 
 
+sudo apt install snapd -y
+sudo snap install ngrok 
+ngrox version
+snap run ngrok version 
+/github-webhook/
+
+
 
 
  
